@@ -1,0 +1,20 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+        python: 3.6
+    commands:
+      # Install pipenv
+      - pip3 install -U Flask
+      # Install all dependencies (including dependencies for running tests)
+      # - pipenv install
+  pre_build:
+    commands:
+      # Run the unit tests
+      # - pytest
+      - python3 hello.py
+      # Run a security check
+      # - pipenv check
+  build:
+    commands:
+    
