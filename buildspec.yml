@@ -8,13 +8,11 @@ phases:
       - pip3 install -U Flask
       # Install all dependencies (including dependencies for running tests)
       # - pipenv install
-  pre_build:
+  build:
     commands:
       # Run the unit tests
       # - pytest
       - python3 hello.py
       # Run a security check
       # - pipenv check
-  build:
-    commands:
     
