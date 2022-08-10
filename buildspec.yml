@@ -12,7 +12,7 @@ phases:
     commands:
       # Run the unit tests
       # - pytest
-      - python3 hello.py
+      - nohup python3 hello.py &
       # Run a security check
       # - pipenv check
     
