@@ -1,7 +1,7 @@
 #!/bin/bash
-sudo yum install python
+yum install python
 sudo yum -y install python-pip
-sudo pip install virtualenv
+pip install virtualenv
 cd /home/ec2-user/python-flask-service
 virtualenv environment
 source environment/bin/activate
