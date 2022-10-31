@@ -1,2 +1,1 @@
-cd /home/ec2-user/python-flask-service/
-python application.py
+ls
