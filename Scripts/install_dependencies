@@ -1,6 +1,10 @@
 #!/bin/bash
-yum install python
-sudo yum -y install python-pip
+sudo yum install python37
+curl -O https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py --user
+ls -a ~
+export PATH=LOCAL_PATH:$PATH
+source ~/PROFILE_SCRIPT
 pip install virtualenv
 cd /home/ec2-user/python-flask-service
 virtualenv environment
