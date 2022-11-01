@@ -20,7 +20,7 @@ hooks:
      timeout: 300
      runas: root
    - location: Scripts/start_server
-     timeout: 300
+     timeout: 2000
      runas: root
   ApplicationStop:
    - location: Scripts/stop_server
